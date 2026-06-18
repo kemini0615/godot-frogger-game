@@ -1,13 +1,13 @@
-extends Node2D
+extends CharacterBody2D
 
 class_name Player
 
 var direction: Vector2 = Vector2.ZERO
-var speed: float = 5
+var speed: float = 100
 
 func _physics_process(_delta: float) -> void:
 	direction = Input.get_vector("left", "right", "up", "down")
-	position += direction * speed
 
-	if (Input.is_action_just_pressed("confirm")):
-		print("You pressed 'space'.")
+	# velocity를 설정해도 move_and_slide()를 호출하지 않으면, 오브젝트는 움직이지 않는다
+	velocity = direction * speed
+	move_and_slide()

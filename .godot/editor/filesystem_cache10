@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781784529
+::res://::1782620867
 icon.svg::CompressedTexture2D::8780662159207251045::1781697271::1781697279::1::::<><><>0<>0<>95f06ebf2efa7a443f5ede2c75d153ef<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://audio/::1781697826
 car.mp3::AudioStreamMP3::3246178571665542976::1781697825::1781697826::1::::<><><>0<>0<>abc7459957b2d907fa36b82b96f8b350<>res://.godot/imported/car.mp3-d823f64b9789635c596ad1d8b8e80f05.mp3str::
@@ -36,8 +36,9 @@ tree potted.png::CompressedTexture2D::3389544860567921485::1781697825::178169782
 ::res://graphics/player/::1781697826
 player_simple.png::CompressedTexture2D::3101742799475853270::1781697825::1781697826::1::::<><><>0<>0<>1c5e0eae2902f400d93138ed015c3d2b<>res://.godot/imported/player_simple.png-da0d067e94fb2205dce5f6ce7ba473b7.ctex::
 player_tileset.png::CompressedTexture2D::6843235375669234817::1781697825::1781697826::1::::<><><>0<>0<>21c29d67251e95d2bb7dfe9729d2bb88<>res://.godot/imported/player_tileset.png-4ca3aae43be08322f35644f77e38bfeb.ctex::
-::res://scenes/::1781699224
-game.tscn::PackedScene::2555748038309628279::1781699224::0::1::::<><><>0<>0<><>::uid://doghmovcgeltw::::res://graphics/map.png<>uid://cxg5qdy050b6s::::res://scenes/player.tscn
-player.tscn::PackedScene::6401421315893094780::1781698453::0::1::::<><><>0<>0<><>::uid://bkgrir378horu::::res://graphics/player/player_simple.png<>uid://b767f1jecunvc::::res://scripts/player.gd
-::res://scripts/::1781699109
-player.gd::GDScript::4698412642919601408::1781699109::0::1::::Player<>Node2D<><>0<>0<><>::
+::res://scenes/::1781787515
+game.tscn::PackedScene::2555748038309628279::1781787515::0::1::::<><><>0<>0<><>::uid://doghmovcgeltw::::res://graphics/map.png<>uid://cxg5qdy050b6s::::res://scenes/player.tscn<>uid://s8m5kw4a1eax::::res://scenes/tree.tscn
+player.tscn::PackedScene::6401421315893094780::1781786908::0::1::::<><><>0<>0<><>::uid://bkgrir378horu::::res://graphics/player/player_simple.png<>uid://b767f1jecunvc::::res://scripts/player.gd
+tree.tscn::PackedScene::1332306389636752407::1781786580::0::1::::<><><>0<>0<><>::uid://d0so81ys3820n::::res://graphics/objects/tree1.png
+::res://scripts/::1781786908
+player.gd::GDScript::4698412642919601408::1781786908::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
