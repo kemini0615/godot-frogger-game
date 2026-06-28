@@ -103,6 +103,7 @@ script = ExtResource("1_g2els")
 sprite_frames = SubResource("SpriteFrames_3vyb7")
 animation = &"up"
 autoplay = "down"
+frame_progress = 0.31509766
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=598492096]
 shape = SubResource("RectangleShape2D_g2els")

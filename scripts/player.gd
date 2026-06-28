@@ -5,6 +5,7 @@ class_name Player
 var direction: Vector2 = Vector2.ZERO
 var speed: float = 100
 
+
 func _physics_process(_delta: float) -> void:
 	direction = Input.get_vector("left", "right", "up", "down")
 
@@ -12,6 +13,7 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed
 	move_and_slide()
 	play_animation()
+
 
 func play_animation():
 	if direction:
