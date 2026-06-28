@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bcoa2dddfs4wx"]
 
+[ext_resource type="Script" uid="uid://cboeoaulbylpc" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://cxg5qdy050b6s" path="res://scenes/player.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://s8m5kw4a1eax" path="res://scenes/tree.tscn" id="3_lnu2h"]
@@ -10,35 +11,54 @@ size = Vector2(46, 654)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lbhrr"]
 size = Vector2(464, 60)
 
-[node name="Game" type="Node2D" unique_id=1992301765]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iywne"]
+size = Vector2(385, 199)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1181159114]
-texture = ExtResource("1_uwrxv")
+[node name="Game" type="Node2D" unique_id=1992301765]
+script = ExtResource("1_lbhrr")
 
 [node name="Player" parent="." unique_id=1324802810 instance=ExtResource("2_yqjtg")]
 position = Vector2(-1, 0)
 
+[node name="BackGround" type="Sprite2D" parent="." unique_id=1181159114]
+texture = ExtResource("1_uwrxv")
+
 [node name="Tree" parent="." unique_id=1910734606 instance=ExtResource("3_lnu2h")]
 position = Vector2(101, -1)
 
-[node name="Walls" type="Node2D" parent="." unique_id=261181163]
+[node name="Area" type="Node2D" parent="." unique_id=261181163]
 
-[node name="Vertical" type="StaticBody2D" parent="Walls" unique_id=1278783425]
+[node name="VerticalWall" type="StaticBody2D" parent="Area" unique_id=1278783425]
 
-[node name="Left" type="CollisionShape2D" parent="Walls/Vertical" unique_id=1953403291]
+[node name="Left" type="CollisionShape2D" parent="Area/VerticalWall" unique_id=1953403291]
 position = Vector2(-215, 0)
 shape = SubResource("RectangleShape2D_lnu2h")
 
-[node name="Right" type="CollisionShape2D" parent="Walls/Vertical" unique_id=246143703]
+[node name="Right" type="CollisionShape2D" parent="Area/VerticalWall" unique_id=246143703]
 position = Vector2(215, 0)
 shape = SubResource("RectangleShape2D_lnu2h")
 
-[node name="Horizontal" type="StaticBody2D" parent="Walls" unique_id=584637427]
+[node name="HorizontalWall" type="StaticBody2D" parent="Area" unique_id=584637427]
 
-[node name="Top" type="CollisionShape2D" parent="Walls/Horizontal" unique_id=371418655]
+[node name="Top" type="CollisionShape2D" parent="Area/HorizontalWall" unique_id=371418655]
 position = Vector2(0, -350)
 shape = SubResource("RectangleShape2D_lbhrr")
 
-[node name="Bottom" type="CollisionShape2D" parent="Walls/Horizontal" unique_id=2016872841]
+[node name="Bottom" type="CollisionShape2D" parent="Area/HorizontalWall" unique_id=2016872841]
 position = Vector2(0, 350)
 shape = SubResource("RectangleShape2D_lbhrr")
+
+[node name="FinishArea" type="Area2D" parent="Area" unique_id=1823431647]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area/FinishArea" unique_id=1808561653]
+position = Vector2(0.5, -227.5)
+shape = SubResource("RectangleShape2D_iywne")
+
+[node name="Timers" type="Node" parent="." unique_id=1504231865]
+
+[node name="CarTimer" type="Timer" parent="Timers" unique_id=1218782090]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="Area/FinishArea" to="." method="_on_finish_area_body_entered"]
