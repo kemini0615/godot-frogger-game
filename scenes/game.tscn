@@ -60,6 +60,8 @@ position = Vector2(-216, 165)
 [node name="Area" type="Node2D" parent="." unique_id=261181163]
 
 [node name="VerticalWall" type="StaticBody2D" parent="Area" unique_id=1278783425]
+collision_layer = 8
+collision_mask = 0
 
 [node name="Left" type="CollisionShape2D" parent="Area/VerticalWall" unique_id=1953403291]
 position = Vector2(-215, 0)
@@ -70,6 +72,8 @@ position = Vector2(215, 0)
 shape = SubResource("RectangleShape2D_lnu2h")
 
 [node name="HorizontalWall" type="StaticBody2D" parent="Area" unique_id=584637427]
+collision_layer = 8
+collision_mask = 0
 
 [node name="Top" type="CollisionShape2D" parent="Area/HorizontalWall" unique_id=371418655]
 position = Vector2(0, -350)
@@ -80,6 +84,8 @@ position = Vector2(0, 350)
 shape = SubResource("RectangleShape2D_lbhrr")
 
 [node name="FinishArea" type="Area2D" parent="Area" unique_id=1823431647]
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area/FinishArea" unique_id=1808561653]
 position = Vector2(0.5, -227.5)
