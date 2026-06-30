@@ -1,6 +1,5 @@
-res://scenes/player.tscn
-res://scenes/car.tscn
-res://scripts/car.gd
 res://scenes/game.tscn
+res://scenes/car.tscn
 res://scripts/game.gd
+res://scripts/car.gd
 res://scenes/tree.tscn

@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1782733012
+::res://::1782826103
 icon.svg::CompressedTexture2D::8780662159207251045::1781697271::1781697279::1::::<><><>0<>0<>95f06ebf2efa7a443f5ede2c75d153ef<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://audio/::1781697826
 car.mp3::AudioStreamMP3::3246178571665542976::1781697825::1781697826::1::::<><><>0<>0<>abc7459957b2d907fa36b82b96f8b350<>res://.godot/imported/car.mp3-d823f64b9789635c596ad1d8b8e80f05.mp3str::
@@ -36,12 +36,12 @@ tree potted.png::CompressedTexture2D::3389544860567921485::1781697825::178169782
 ::res://graphics/player/::1781697826
 player_simple.png::CompressedTexture2D::3101742799475853270::1781697825::1781697826::1::::<><><>0<>0<>1c5e0eae2902f400d93138ed015c3d2b<>res://.godot/imported/player_simple.png-da0d067e94fb2205dce5f6ce7ba473b7.ctex::
 player_tileset.png::CompressedTexture2D::6843235375669234817::1781697825::1781697826::1::::<><><>0<>0<>21c29d67251e95d2bb7dfe9729d2bb88<>res://.godot/imported/player_tileset.png-4ca3aae43be08322f35644f77e38bfeb.ctex::
-::res://scenes/::1782627648
-car.tscn::PackedScene::58354330706963186::1782627648::0::1::::<><><>0<>0<><>::uid://d0dya2slufckd::::res://graphics/cars/green.png<>uid://dbd1j43l70t::::res://scripts/car.gd
-game.tscn::PackedScene::2555748038309628279::1782627236::0::1::::<><><>0<>0<><>::uid://cboeoaulbylpc::::res://scripts/game.gd<>uid://doghmovcgeltw::::res://graphics/map.png<>uid://cxg5qdy050b6s::::res://scenes/player.tscn<>uid://s8m5kw4a1eax::::res://scenes/tree.tscn
-player.tscn::PackedScene::6401421315893094780::1782627596::0::1::::<><><>0<>0<><>::uid://b767f1jecunvc::::res://scripts/player.gd<>uid://c4q6c7mxqh78h::::res://graphics/player/player_tileset.png
-tree.tscn::PackedScene::1332306389636752407::1781786580::0::1::::<><><>0<>0<><>::uid://d0so81ys3820n::::res://graphics/objects/tree1.png
-::res://scripts/::1782627627
-car.gd::GDScript::6260588502518877::1782627627::0::1::::Car<>Area2D<><>0<>0<><>::
-game.gd::GDScript::4872199400064976604::1782627561::0::1::::Game<>Node2D<><>0<>0<><>::
+::res://scenes/::1782825534
+car.tscn::PackedScene::58354330706963186::1782734957::0::1::::<><><>0<>0<><>::uid://d0dya2slufckd::::res://graphics/cars/green.png<>uid://dbd1j43l70t::::res://scripts/car.gd
+game.tscn::PackedScene::2555748038309628279::1782825534::0::1::::<><><>0<>0<><>::uid://cboeoaulbylpc::::res://scripts/game.gd<>uid://doghmovcgeltw::::res://graphics/map.png<>uid://cxg5qdy050b6s::::res://scenes/player.tscn<>uid://s8m5kw4a1eax::::res://scenes/tree.tscn<>uid://c5iy3tuxd0vaw::::res://graphics/objects/barrier.png<>uid://cxutqp0hti8vw::::res://graphics/objects/bench.png<>uid://beho7qo80tneo::::res://graphics/objects/bin.png<>uid://y78osdw0bolc::::res://graphics/objects/box1.png<>uid://cv8cli0ov53f1::::res://graphics/objects/box2.png<>uid://cuqeolw7yvunc::::res://graphics/objects/box3.png<>uid://d1h0ksxlju0ou::::res://graphics/objects/house1.png<>uid://73gfa8tjrcik::::res://graphics/objects/house3.png<>uid://b778fphjcav0::::res://graphics/objects/light.png<>uid://b3jchn0artiyt::::res://graphics/objects/line.png<>uid://oqgtp468wc6x::::res://graphics/objects/sign.png
+player.tscn::PackedScene::6401421315893094780::1782734926::0::1::::<><><>0<>0<><>::uid://b767f1jecunvc::::res://scripts/player.gd<>uid://c4q6c7mxqh78h::::res://graphics/player/player_tileset.png
+tree.tscn::PackedScene::1332306389636752407::1782823710::0::1::::<><><>0<>0<><>::uid://d0so81ys3820n::::res://graphics/objects/tree1.png
+::res://scripts/::1782734394
+car.gd::GDScript::6260588502518877::1782733979::0::1::::Car<>Area2D<><>0<>0<><>::
+game.gd::GDScript::4872199400064976604::1782734394::0::1::::Game<>Node2D<><>0<>0<><>::
 player.gd::GDScript::4698412642919601408::1782627569::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
