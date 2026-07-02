@@ -5,3 +5,5 @@ res://scenes/title.tscn
 res://scripts/title.gd
 res://scenes/player.tscn
 res://scripts/car.gd
+res://scenes/global.tscn
+res://scripts/global.gd

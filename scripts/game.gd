@@ -28,6 +28,10 @@ func _on_score_timer_timeout() -> void:
 	
 	
 func _on_finish_area_body_entered(_body: Node2D) -> void:
+	# 글로벌 씬(노드)은 어디서든 접근 가능
+	if score < Global.score:
+		Global.score = score
+	
 	# 물리 연산 중에 Collision Object를 제거(씬 교체)할 때는 call_deferred() 사용을 권장
 	# call_deferred()는 지정한 함수를 즉시 호출하지 않고, 현재 물리 연산이 끝난 후 안전하게 호출한다
 	call_deferred("change_scene")
