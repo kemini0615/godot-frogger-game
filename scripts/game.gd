@@ -4,8 +4,7 @@ class_name Game
 
 var car_scene: PackedScene = preload("res://scenes/car.tscn")
 
-func _on_finish_area_body_entered(body: Node2D) -> void:
-	print('Player has entered')
+var score: int = 0
 
 
 func _on_car_timer_timeout() -> void:
@@ -22,6 +21,14 @@ func _on_car_timer_timeout() -> void:
 	# 씬 인스턴스를 자식 노드로 추가
 	# [주의] Car._ready()는 노드가 씬 트리에 추가되는 이 타이밍에 호출된다
 	$Objects.add_child(car)
+	
+func _on_score_timer_timeout() -> void:
+	score += 1
+	$CanvasLayer/Label.text = 'SCORE: ' + str(score)
+	
+	
+func _on_finish_area_body_entered(body: Node2D) -> void:
+	print('Player has entered')
 
 
 func back_to_title(_body: Node2D) -> void:
