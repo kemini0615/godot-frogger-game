@@ -27,9 +27,15 @@ func _on_score_timer_timeout() -> void:
 	$CanvasLayer/Label.text = 'SCORE: ' + str(score)
 	
 	
-func _on_finish_area_body_entered(body: Node2D) -> void:
-	print('Player has entered')
-
-
+func _on_finish_area_body_entered(_body: Node2D) -> void:
+	# 물리 연산 중에 Collision Object를 제거(씬 교체)할 때는 call_deferred() 사용을 권장
+	# call_deferred()는 지정한 함수를 즉시 호출하지 않고, 현재 물리 연산이 끝난 후 안전하게 호출한다
+	call_deferred("change_scene")
+	
+	
 func back_to_title(_body: Node2D) -> void:
-	print("Back to title")
+	call_deferred("change_scene")
+
+
+func change_scene():
+	get_tree().change_scene_to_file("res://scenes/title.tscn")
